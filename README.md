@@ -18,10 +18,10 @@ This repo contains the code to make the mongodb connection and read data in a pa
  ## Ouput
  To check the output following is the way.
 
- 1. To check health check, run "http:localhost:<PORT>/" (This is a get call)
+ 1. To check health check, run "http:localhost:PORT/" (This is a get call)
  2. To get the data from database, run the following curl
 
-      curl --location --request POST 'http://localhost:<PORT>/v1/get-data' \
+      curl --location --request POST 'http://localhost:PORT/v1/get-data' \
       --header 'Content-Type: application/json' \
       --data-raw '{
          "startDate": "2010-06-23",
